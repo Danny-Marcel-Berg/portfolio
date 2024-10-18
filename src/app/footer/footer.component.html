@@ -1,0 +1,33 @@
+<div class="footer">
+  <div>
+    <div class="copyright">
+      <span>©Danny Marcel Berg </span>
+    </div>
+  </div>
+  <div>
+    <div *ngIf="screenWidth < 899" class="sozial-media">
+      <a target="_blank" href="https://github.com/Danny-Marcel-Berg"
+        ><img src="./assets/img/github-child.svg" alt=""
+      /></a>
+      <a href="mailto:danny.berg@outlook.de"
+        ><img src="./assets/img/email-child.svg" alt=""
+      /></a>
+      <a target="_blank" href=""
+        ><img src="./assets/img/linkedin-child.svg" alt=""
+      /></a>
+    </div>
+
+    <div *ngIf="screenWidth > 900" class="sozial-media">
+      <a target="_blank" href="https://github.com/Danny-Marcel-Berg"
+        ><img src="./assets/img/github.svg" alt=""
+      /></a>
+      <a target="_blank" href="mailto:danny.berg@outlook.de"
+        ><img src="./assets/img/email.svg" alt=""
+      /></a>
+      <a target="_blank"><img src="./assets/img/LinkInG.svg" alt="" /></a>
+    </div>
+    <div class="Impressum">
+      <a routerLink="/imprint/" href="">{{ "Imprint" | translate }}</a>
+    </div>
+  </div>
+</div>

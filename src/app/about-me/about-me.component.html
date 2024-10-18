@@ -1,0 +1,71 @@
+<div
+  style="
+    width: 100%;
+    background-color: rgb(20, 29, 47);
+    display: flex;
+    justify-content: center;
+  "
+>
+  <div id="me-slide" class="about-me-container">
+    <div class="sozial-media" *ngIf="screenWidth < 900">
+      <div class="line"></div>
+      <div class="sozial-media-icons">
+        <a target="_blank" href="https://github.com/Danny-Marcel-Berg"
+          ><img src="./assets/img/github-child.svg" alt=""
+        /></a>
+        <a href="mailto:danny.berg@outlook.de"
+          ><img src="./assets/img/email-child.svg" alt=""
+        /></a>
+        <a target="_blank" href=" "
+          ><img src="./assets/img/linkedin-child.svg" alt=""
+        /></a>
+      </div>
+    </div>
+    <h1 translate>About me</h1>
+    <div class="about-me-text-container">
+      <div class="text-container">
+        <span>
+          {{ "intro" | translate }}
+        </span>
+        <div
+          class="personal-think"
+          data-aos="zoom-in"
+          data-aos-duration="1200"
+          data-aos-offset="80"
+        >
+          <div>
+            <img src="./assets/img/lamp.svg" alt="" />
+          </div>
+          <div class="personal-span">
+            <span>{{ "firstAbout" | translate }}</span>
+          </div>
+        </div>
+        <div
+          class="personal-think"
+          data-aos="zoom-in"
+          data-aos-duration="1200"
+          data-aos-offset="80"
+        >
+          <div>
+            <img src="./assets/img/puzzle.svg" alt="" />
+          </div>
+          <div class="personal-span">
+            <span> {{ "secoundAbout" | translate }} </span>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="screenWidth > 1100" class="pictute-container">
+        <div *ngIf="screenWidth > 1100" class="circle">
+          <img src="./assets/img/danny-portfolio.png" alt="" />
+        </div>
+        <div *ngIf="screenWidth > 1100" class="line-picture">
+          <img
+            class="backgraound-effect"
+            src="./assets/img/about-me-shadow.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

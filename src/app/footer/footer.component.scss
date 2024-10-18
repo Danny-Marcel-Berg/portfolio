@@ -1,0 +1,85 @@
+.footer {
+  font-family: "Poppins";
+  z-index: 20;
+  border-top: 4px solid #70e61c;
+  background-color: rgb(20, 29, 47);
+  min-height: 250px;
+
+  @media (min-width: 900px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.name-container {
+  margin-top: 30px;
+  font-family: "Poppins";
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  margin-top: 0;
+  font-size: 2 rem;
+  color: white;
+}
+
+.dot-color {
+  margin: 0;
+  font-size: 56px;
+  color: white;
+  background: linear-gradient(to top, white 30%, rgb(152, 71, 255) 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+.copyright {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  span {
+    color: white;
+    font-size: 22px;
+  }
+}
+
+.sozial-media {
+  transition: 155ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  img {
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
+
+.Impressum {
+  transition: 155ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      scale: 1.1;
+      color: #98fe00;
+    }
+
+    @media (min-width: 900px) {
+      font-size: 18px;
+    }
+  }
+}
