@@ -35,12 +35,12 @@
       </div>
     </div>
 
-    <div *ngIf="screenWidth > 900" class="scrollDownContainer">
+    <div *ngIf="screenWidth > 899" class="scrollDownContainer">
       Scroll down<img src="./assets/img/arrow-down.svg" alt="" />
     </div>
   </div>
-
-  <div *ngIf="screenWidth > 900" class="sozial-media">
+  s
+  <div *ngIf="screenWidth > 899" class="sozial-media">
     <div class="line"></div>
     <div class="sozial-media-icons">
       <a target="_blank" href="https://github.com/Danny-Marcel-Berg"
@@ -55,10 +55,10 @@
       /></a>
     </div>
   </div>
-  <div *ngIf="screenWidth < 900" class="firstcreen-container">
+  <div *ngIf="screenWidth <= 899" class="firstscreen-container">
     <div class="picture-container">
       <img
-        *ngIf="screenWidth < 900"
+        *ngIf="screenWidth <= 899"
         class="MebigMo"
         src="/assets/img/danny-portfolio.png"
         alt=""
@@ -69,11 +69,11 @@
     </div>
     <div class="wing">
       <img
-        *ngIf="screenWidth < 899"
+        *ngIf="screenWidth <= 899"
         src="./assets/img/wing-mobile.svg"
         alt=""
       />
-      <img *ngIf="screenWidth > 900" src="./assets/img/destop.svg" alt="" />
+      <img *ngIf="screenWidth > 899" src="./assets/img/destop.svg" alt="" />
       <div class="Headline" #top>
         <div class="vertical">
           <span>I am</span>
