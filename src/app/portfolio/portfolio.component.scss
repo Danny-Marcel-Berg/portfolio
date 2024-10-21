@@ -71,7 +71,7 @@
     max-height: 700px !important;
     max-width: 600px !important;
     object-fit: cover;
-    margin-top: -100px;
+    margin-top: 80px;
     width: 70%;
     height: 70%;
 
@@ -171,6 +171,14 @@
     font-size: 22px;
   }
 
+  @media (max-width: 319px) {
+    padding: 12px 30px 12px 30px;
+  }
+
+  @media (min-width: 320px) {
+    padding: 15px 30px 15px 30px;
+  }
+
   &:hover {
     background-color: #70e61c;
     border: 2px solid #70e61c;
@@ -193,6 +201,11 @@
   @media (min-width: 800px) {
     font-size: 22px;
   }
+
+  @media (min-width: 320px) {
+    margin-top: 5px;
+  }
+
   &:hover {
     background-color: #70e61c;
   }
